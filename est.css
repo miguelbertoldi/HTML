@@ -1,0 +1,39 @@
+
+
+.Titulo{
+    border: 1px;
+    padding:1px;
+    margin: 1px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+}
+.em-wider { 
+    word-spacing: 17em; 
+}
+
+.links{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font black;
+}
+
+.inicioNot{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    float: center;
+    padding: 0;
+    margin: 0;
+    border: 0;  
+}
+
+.linhas{
+    border: 50px;
+    padding: 0px;
+    margin: 0;
+    line-height: 15px;
+}
+
+ultimoItem{
+    float: right;
+}
