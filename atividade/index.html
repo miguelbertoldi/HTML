@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bold{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <input id="input-buscar" type="text" placeholder="Buscar...">
+    <ol>
+        <li>João</li>
+        <li>Claudio</li>
+        <li>Marcio</li>
+    </ol>
+   
+   <script>
+        const input = document.getElementById('input-buscar');
+        input.onkeyup = buscar; 
+        function buscar(){
+            const textoBuscar = input.value;
+            const itensLista = document.querySelectorAll('ol li');
+            console.log('itensLista', itensLista);
+
+            for(const itemLista of itensLista){
+
+                const textoItemListMaiusculo = itemLista.innerText.toUpperCase();
+                const textoBuscarMaiusculo = textoBuscar.toUpperCase();
+
+                const achouBusca = textoBuscar && textoItemListMaiusculo.includes(textoBuscarMaiusculo);
+                if(achouBusca){
+                    itemLista.classList.add('bold');
+                }else{
+                    itemLista.classList.remove('bold');
+                }
+            }
+        }        
+
+
+
+    </script>
+</body>
+</html>
